@@ -1,0 +1,43 @@
+.video {
+	padding: 50px 0;
+	height: auto;
+	background: #f6f6f6;
+}
+
+.video video {
+	display: block;
+	width: 63%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.video1, .video2 {
+	position: relative;
+}
+
+button {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 80px;
+	height: 80px;
+	background: rgba(0,0,0,.5);
+	margin-left: -40px;
+	margin-top: -40px;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+}
+
+button i {
+    position: absolute;
+    display: block;
+    border-left: 30px solid #fff;
+    border-top: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    top: 12px;
+    left: 30px;
+    border-radius: 5px;
+	cursor: pointer;
+}

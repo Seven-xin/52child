@@ -1,0 +1,201 @@
+/* dora-banner 顶部大图 */
+.index {
+	background: #fff !important;
+}
+.dora-banner {
+	width: 100%;
+	height: 500px;
+}
+
+.dora-banner img {
+	width: 100%;
+	height: 100%;
+}
+
+/* doraTime 倒计时 */
+.doraTime {
+	width: 100%;
+	height: 225px;
+	background: #f7f7f7;
+	text-align: center;
+}
+
+.doraTime h2 {
+	font-size: 20px;
+	line-height: 150px;
+}
+
+.doraTime p {
+	font-size: 14px;
+}
+
+.doraTime p span {
+	margin: 0 10px;
+	font-size: 60px;
+	color: #545454;
+}
+
+/* list */
+.dorLlist {
+	overflow: hidden;
+	width: 100%;
+	height: 655px;
+}
+
+.dorLlist ul {
+	margin: 150px auto 0;
+	height: 380px;
+	width: 63%;
+}
+
+.dorLlist ul li {
+    height: 100%;
+    width: 24%;
+    float: left;
+    margin-left: 1%;
+	
+}
+
+.dorList-img {
+	width: 100%;
+	height: 290px;
+}
+
+.dorList-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.dorLlist ul li p {
+	font-size: 1em;
+	line-height: 40px;
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
+
+}
+
+.dorLlist ul li a {
+	outline: none;
+	border: none;
+	background: #000;
+	width: 100px;
+	height: 42px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	line-height: 42px;
+}
+
+.dorLlist ul li a:hover {
+	opacity: .4;
+}
+
+/* ad */
+.ad {
+	width: 100%;
+	height: 150px;
+	background: #f6f6f6;
+	text-align: center;
+	font-size: 40px;
+	line-height: 150px;
+	color: #777;
+}
+
+/*////////////////////////////////////////首页响应式//////////////////////////////////////*/
+/* width 1204 */
+@media only screen and (min-width: 767px) and (max-width: 1025px) {
+	.dora-banner {
+		height: 200px;
+	}
+	
+	.doraTime {
+		height: 170px;
+	}
+	
+	.doraTime h2 {
+		line-height: 100px;
+	}
+	
+	.doraTime p span {
+		font-size: 30px;
+	}
+	
+	.dorLlist {
+		height: 300px
+	}
+	
+	.dorLlist ul {
+	    margin: 30px auto 0;
+	    height: 83%;
+	    width: 80%;
+	}
+	
+	.dorList-img {
+		height: 62%;
+	}
+	
+	.ad {
+		height: 80px;
+	}
+	
+	.ad p {
+		font-size: 30px;
+		line-height: 80px;
+	}
+}
+
+/* width 414 iphone6 */
+@media only screen and (max-width: 767px) {
+	.dora-banner {
+		height: 150px;
+	}
+	
+	.doraTime {
+		height: 170px;
+	}
+	
+	.doraTime h2 {
+		line-height: 100px;
+	}
+	
+	.doraTime p span {
+		font-size: 30px;
+	}
+	
+	.dorLlist {
+		height: auto;
+		/*padding-bottom: 30px;*/
+	}
+	
+	.dorLlist ul {
+	    margin: 30px auto 0;
+	    height: auto;
+	    width: 80%;
+	    overflow: hidden;
+	}
+	
+	.dorLlist ul li {
+		width: 44%;
+		margin-bottom: 30px;
+	}
+	
+	.dorLlist ul li:nth-child(2n-1) {
+		margin-right: 9%;
+	}
+	
+	.dorList-img {
+		height: 62%;
+	}
+	
+	.ad {
+		height: 60px;
+	}
+	
+	.ad p {
+		font-size: 24px;
+		line-height: 60px;
+	}
+}

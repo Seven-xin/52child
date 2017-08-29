@@ -1,0 +1,228 @@
+/* 大图 */ 
+.active-bigImg {
+	width: 100%;
+	height: 454px;
+}
+
+.active-bigImg img {
+	width: 100%;
+	height: 100%;
+}
+
+/* intor */
+.actList {
+	width: 60%;
+	height: auto;
+	margin: 100px auto 20px;
+}
+
+.actList li {
+	position: relative;
+	width: 100%;
+	height: 700px;
+}
+
+.actList-img {
+	width: 44%;
+	display: inline-block;
+	height: 80%;
+}
+
+.actList li img {
+	height: 100%;
+	width: 100%;
+}
+
+.actList-intor {
+	width: 44%;
+	height: 78%;
+	margin-left: 45px;
+	display: inline-block;
+}
+
+.actList-intor h2 {
+	font-weight: bold;
+	color: #696969;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.actLine {
+	height: 1px;
+	width: 120px;
+	background: #000;
+	margin: 20px auto;
+}
+
+.actList-intor p {
+	font-size: 15px;
+	color: rgb(105, 105, 105);
+	line-height: 2em;
+	text-indent: 2em;
+}
+
+.actBtn {
+	display: block;
+	width: 148px;
+	height: 58px;
+	text-align: center;
+	margin: 10px auto 0;
+	font-size: 18px;
+	line-height: 58px;
+	transition: all .5s;
+	/*animation: shake 2s;*/
+}
+
+.actBtn:hover {
+	animation: shake 2s;
+}
+
+@keyframes shake{
+	0%{}
+	15%{ 
+		transform:  rotate(10deg);
+	}
+	30%{ 
+		transform:  rotate(-10deg);
+	}
+	45%{ 
+		transform:  rotate(5deg);
+	}
+	60%{ 
+		transform:  rotate(-5deg);
+	}
+	75%{ 
+		transform:  rotate(2deg);
+	}
+	90%{ 
+		transform:  rotate(-2deg);
+	}
+}
+
+.actBtn:hover {
+	background: #464646;
+	color: #fff;
+	border: 2px solid #464646;
+}
+
+.colorgreen{ color: #2fa456;border: 2px solid #2fa456; }
+.colorred{ color: #ed6675; border: 2px solid #ed6675;}
+.colorblue{ color: #272b95;border: 2px solid #272b95; }
+
+
+/* succ */
+.succ {
+	width: 100%;
+	height: 490px;
+	margin-top: 40px;
+}
+
+.succ h2 {
+	display: block;
+	width: 100%;
+	height: 45px;
+	margin: 0 auto;
+	font-size: 40px;
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #000;
+	line-height: 45px;
+	text-align: center;
+}
+
+.succ img {
+	display: block;
+	margin: 60px auto 0;
+}
+
+/*/////////////////响应式///////////////////*/
+/* width 1204 */
+@media only screen and (min-width: 414px) and (max-width: 1025px) {
+	.actList {
+		margin: 20px auto 20px;
+		width: 85%;	
+	}
+	
+	.actList li {
+		height: 485px;
+	}
+	
+	.actList li .actList-img {
+		width: 44%;
+	}
+	
+	.actList-intor {
+		width: 44%;
+	}
+	
+	.actList-intor {
+	    height: 80%;
+	    overflow: hidden;
+	    float: right;
+	    line-height: 1.9em;
+	    margin-left: 0;
+	}
+	
+	.actList-intor p {
+		font-size: 12px;
+		line-height: 1rem;
+	}
+	
+	.actBtn {
+		margin-top: 20px;
+	}
+	
+	.succ {
+		height: 400px;
+	}
+	
+	.succ img {
+		margin: 20px auto 0;
+	}
+}
+
+/* width 414 iphone6 */
+@media only screen and (max-width: 414px) {
+	.active-bigImg {
+		height: 100px;	
+	}
+	
+	.actList {
+		margin: 20px auto 20px;
+		width: 90%;
+	}
+	
+	.actList-img {
+		width: 53% !important;
+		float: left;
+	}
+	
+	.actList li {
+		height: 400px;
+		margin-top: 0;
+	}
+	.actList-intor {
+		height: 78%;
+	    margin-left: 10px;
+	    display: inline-block;
+	    margin-top: 0;
+	}
+	
+	.actList-intor h2{
+		font-size: 18px !important;
+	}
+	
+	.actList-intor p {
+		display: none;	
+	}
+	
+	.actBtn  {
+		position: absolute;
+		right: 0;
+		top: 200px;
+	}
+	
+	.succ {
+		margin-top: 0;
+	}
+}

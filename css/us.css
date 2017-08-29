@@ -1,0 +1,85 @@
+/* wrap */
+.wrap {
+	height: auto;
+	width: 100%;
+	background: #f6f6f6;
+	overflow: hidden;
+}
+.bgImg {
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+	padding-bottom: 15px;
+}
+
+.bgImg img {
+	margin: 0 auto;
+	width: 45%;
+}
+
+.bgImg i {
+	font-weight: bold;
+}
+
+.intor {
+	text-align: center;
+	height: auto;
+	width: 47%;
+	border-top: 1px solid #666;
+	margin: 0 auto;
+	color: rgb(102, 102, 102);
+	line-height: 30px;
+	border-bottom: 1px solid #666;
+	margin-bottom: 40px;
+}
+
+.intor p:last-child {
+	margin-bottom: 60px;
+}
+
+
+/*/////////////////响应式///////////////////*/
+
+/* 响应式 */
+/* width 1204 */
+@media only screen and (min-width: 414px) and (max-width: 1025px) {
+	.bgImg img {
+		width: 65%;
+	}
+	.intor {
+		width: 80%;
+	}
+	
+	.header-list ul {
+		width: 85% !important;
+	}
+}
+
+/* 响应式 */
+/* width 414 iphone6 */
+@media only screen and (max-width: 414px) {
+	.bgImg {
+	    margin-top: 20px;
+	    padding-bottom: 5px; 	
+	}
+	.bgImg img {
+		width: 86%;
+	}
+	.intor {
+		width: 80%;
+		font-size: 13px !important;
+	}
+	.header-list {
+		position: absolute;
+		display: none;
+	}
+	
+	.header-list li {
+		display: block;
+	}
+	
+	.on {
+		display: block !important;
+	}
+}
+
